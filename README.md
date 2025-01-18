@@ -29,12 +29,13 @@ The dataset contains the following columns:
 
 3. **Predictive Modeling**:
    - Linear Regression
-   - Ridge Regression
+   - Polynomial Regression
    - Random Forest Regression
 
 4. **Evaluation**:
    - Mean Squared Error (MSE)
    - R-squared (R²)
+   - Cross Validation
 
 ## Tools and Libraries
 
@@ -46,12 +47,52 @@ The dataset contains the following columns:
 
 ## Results
 
-| Model               | R-squared | RMSE   |
-|---------------------|-----------|--------|
-| Linear Regression   | 0.75      | 4600   |
-| Ridge Regression    | 0.76      | 4500   |
-| Random Forest       | 0.87      | 3200   |
+| Model                                  | R-squared |
+|--------------------------              |-----------|
+| Linear Regression                      | 0.62      |
+| Linear Regression(cross validation)    | 0.74      |
+| Polynomial Regression                  | 0.83      |
+| Random Forest                          | 0.88      |
 
 ## How to Run
 
-1. Clone
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/jenishmehta11/Health-Insurance-Data-Analysis.git
+
+2. Install dependencies
+   If using pip:
+    ```bash
+    pip install -r requirements.txt
+    ```
+    If using conda:
+    ```bash
+    conda env create -f environment.yml
+    conda activate <your-environment-name>
+    ```
+3. Run the analysis script:
+
+Execute the main analysis Python script:
+```bash
+python analysis.py
+```
+
+4. View results and make changes:
+
+The analysis outputs (e.g., plots, predictions) will be saved in the output directory or displayed in the terminal/Jupyter Notebook.
+To suggest or implement changes, create a new branch and commit your modifications (see the Contribution section).
+
+Suggest changes or enhancements:
+Open an issue on GitHub if you have an idea or found a bug.
+Provide detailed descriptions of the changes or features you’re proposing.
+
+To implement changes:
+Fork the repository and follow the Contribution guidelines outlined in the Contribution section.
+
+
+
+     
+   
+   
+   
