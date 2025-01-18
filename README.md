@@ -66,14 +66,8 @@ The dataset contains the following columns:
     ```bash
     pip install -r requirements.txt
     ```
-    If using conda:
-    ```bash
-    conda env create -f environment.yml
-    conda activate <your-environment-name>
-    ```
-3. Run the analysis script:
 
-Execute the main analysis Python script:
+3. Execute the main analysis Python script:
 ```bash
 python analysis.py
 ```
